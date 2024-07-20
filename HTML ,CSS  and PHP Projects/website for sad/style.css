@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    width: inherit;
+}
+
+body{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+h4{
+
+    position:relative;
+    top: 0px;
+    left: 1000px;
+}
+
+h2{
+    position: relative;
+    text-align: left;
+    top: 15px;
+    font-size: 20px;
+
+}
+h3{
+    position: relative;
+    text-align: center;
+    top: 1250px;
+    font-size: 100px;
+
+}
+
+h1{
+    top: 15px;
+    position: relative;
+    left: -780px;
+    
+}
+
+p{
+    position: relative;
+    text-align: left;
+    top: 80px;
+    font-size: 20px;
+    padding: 12px;
+}
+
+p1{
+position:relative;
+top: 12px;
+}
+
+li a:hover{
+    width: 100px;
+    height: 25px;
+    transition-timing-function: ease;
+    transition:  2s;
+    background-color: #ffff;
+}
+
+li a{
+    position:relative ;
+    left: 525px;
+    padding: 20px 35px ;
+    border: solid 1px rgb(129, 129, 129) ;  
+    border-width: 1px;
+    top: 40px;
+}
+
+ul{
+   display: flex;
+   gap: 15px;
+   list-style-type: none;
+    position: relative;
+    padding: 20px;
+    top: -135px;
+}
+
+form{
+   position: relative;
+   display: inline-block;
+   width: 30%;
+   padding: 120px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;  
+   background-color: azure;
+   border-color: black;
+   border: solid .5px;
+   border-radius: 25px;
+   top: 150px;
+   
+}
+
+#AboutUS{
+    margin-right: 200px;
+    text-align: left;
+}
+
+#textbox{
+    width: 500px;
+}
+
+#navbar{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(133, 131, 131);
+    top: -18px;
+    height: 125px;
+}
+
+#page{
+    position: relative;
+    width: 10px;
+}
+
+#desc{
+    position: relative;
+    top: -800px;
+}
+ img{
+    position: relative;
+    width: 250px;
+    height: 150px;
+    left: -800px;
+    top: 10px;
+ }
+
+ #login{
+
+    position: relative;
+    left: 1000px;
+    top: -193px;
+ }

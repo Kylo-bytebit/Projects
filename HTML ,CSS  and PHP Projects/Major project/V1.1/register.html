@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+     <title>Covid-19 Vaccines</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+        <div id="main">
+
+    <div id="navbar">
+    <div class="logo">
+        <img src="logo.png">
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="Vaccines.html">Vaccines</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <script type="text/javascript">
+		alert("The information collected is only for use to schedule your vaccination time and location");
+	</script>
+        
+        <div class="map-dec">
+         <iframe class="maps" src="https://www.atlistmaps.com/map/6c8ab1a6-7f5d-4c46-acd2-9af4c73e0d43?share=true" allow="geolocation" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+        </div>
+        <header>
+	<section class="containers">
+		<div class="container">
+			<form action="https://formspree.io/f/xbjqawrq"  method="post">
+                
+				<div class="form-group">
+				<label for="FirstName">
+					First Name:
+				</label>
+				<input type="text" id="FirstName" name="FirstName" required>	
+				</div>
+
+				<div class="form-group">
+				<label for="LastName">
+					Last Name:
+				</label>
+				<input type="text" id="LastName" name="LastName" required>	
+				</div>
+                
+                <div class="form-group">
+                <label for="Gender">
+                    Gender:
+                    </label>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Rather not Say
+                                        
+                </div>
+                
+                <div class="slidecontainer">
+                <label for="Age">
+                    Age
+                    :</label>
+                   <input type="range" name="weight" id="range_weight" value="5" min="1" max="100" oninput="range_weight_disp.value = range_weight.value">
+   <output  id="range_weight_disp" required></output>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+				<div class="form-group">
+				<label for="Email">
+					Email Address:
+				</label>
+				<input type="Email" id="Email" name="Email" required>	
+				</div>
+
+                <div class="form-group">
+                <label for = "telephone number">Telephone Number:</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label for = "Parish"> Which Parish are You From</label>
+                    <input type="text">
+                </div>
+                
+                <div class="form-group">
+                    <label for="Children">No. of Children</label>
+                    <select name="Kids">
+                    <option></option>
+                        <option>1</option>
+                        <option>2 </option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="chronic illnesses">Do you have Any Chronic Illnesses:</label>
+                    <input type="checkbox" required>Asthma
+                    <input type="checkbox" required>Cancer
+                    <input type="checkbox" required>Diabetes
+                    <input type="checkbox" required>Heart disease
+                </div>
+                
+                <div class="form-group">
+                    <label for= "Have Virus">Do/Did you Have Covid-19 ?:</label>
+                    <input type="radio" name ="ans">Yes
+                    <input type="radio" name="ans">No
+                </div>
+                <div class="form-group">
+                    <label> If Yes Please Enter the date of infection</label>
+                    <input type="date" required>
+                </div>
+                
+				<input type="submit" id="submit" value="submit">
+                    
+                
+			</form>
+		</div>
+        
+	</section>
+</header>
+    </div>
+    </div>
+        <footer id="footer">&copy; <em id="date"></em>BigBois IT Department</footer>
+</body>
+</html>
