@@ -1,0 +1,28 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+<h1 class="text-center" style="padding-top: 10vh; padding-bottom: 1vh;">Products</h1>
+
+
+<form class="d-flex" method="post" action="{% url 'search' %}" style="padding-bottom: 4vh;">
+
+    {% csrf_token %}
+    <input class="form-control me-2" type="search" name="searched" placeholder="Search...">
+    <button class="btn btn-outline-secondary" type="submit">Search</button>
+
+  </form>
+
+
+  <div class="row" style="gap: 20px;">
+      {% for Item in rpsfront %}
+      <div class="card" style="width: 18rem;">
+          <img src="#" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{Item.item_name}}</h5>
+            <p class="card-text">${{Item.item_price}}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        {% endfor %}
+  </div>
+
+  {% endblock %}

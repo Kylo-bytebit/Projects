@@ -1,0 +1,73 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+
+{% block content %}
+    <h1 class="text-center" style="padding-top: 10vh; padding-bottom: 1vh;">Royal Printer Solution</h1>
+    <p class="text-center" style="padding-bottom: 5vh; font-size: larger; font-weight: 400;"> For all your printer repairs and servicing 
+        For all major brands(Epson, Hp, Lexmark, Brother, Cannon and Oki etc.)
+        Toners and ink cartridges at reasonable price 
+        Quick and efficient service </p>
+    <section>
+        <h1 class="text-center" style="padding-top: 10vh; padding-bottom: 1vh;">Featured</h1>
+
+     <div class="row" style="gap: 20px;">   
+       
+            {% for Item in rpsfront %}
+            <div class="card" style="width: 18rem;">
+                <img src="#" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{Item.item_name}}</h5>
+                  <p class="card-text">${{Item.item_price}}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+                        
+            <div class="card" style="width: 18rem;">
+                <img src="#" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{Item.item_name}}</h5>
+                  <p class="card-text">${{Item.item_price}}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+              
+            <div class="card" style="width: 18rem;">
+                <img src="#" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{Item.item_name}}</h5>
+                  <p class="card-text">${{Item.item_price}}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        
+            <div class="card" style="width: 18rem;">
+                <img src="#" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{Item.item_name}}</h5>
+                  <p class="card-text">${{Item.item_price}}</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+            
+              {% endfor %}
+
+    </div>
+
+    <div class="position-absolute top-50 start-50 translate-middle">
+    <a class="btn btn-outline-primary text-center" href="{% url 'products' %}" style="position: relative; top: 27vh;">View all Products</a>
+    </div>
+    
+    </section>
+    
+    <h1 class="text-center" style="padding-top: 25vh; padding-bottom: 1vh;">Having Printer Issues?</h1>
+    <p class="text-center" style="padding-top: 3vh; padding-bottom: 1vh; font-weight: 400;">Contact Us</p>
+    <p class="text-center">Phone:(876)838-5054 </p>
+    <p class="text-center">Email: rp4solution@hotmail.com</p>
+    <p class="text-center" style="padding-top: 2vh; padding-bottom: 1vh; font-weight: 400;">Visit Us</p>
+    <p class="text-center">139 Maxfeild ave </p>
+    <p class="text-center">Shop#10</p> 
+    <p class="text-center">Kingston</p>
+   
+    </div>
+{% endblock %}
