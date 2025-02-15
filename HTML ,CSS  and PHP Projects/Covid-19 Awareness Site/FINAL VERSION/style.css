@@ -1,0 +1,59 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #31f1ff;
+    transition: ease-in-out 0.5s;
+}
+.landing
+{
+position: relative;
+top: -50vh;
+
+}
+
+.landing h1{
+    color: white;
+}
+
+.landing p{
+    color: white;
+}
+
+
+.fill-white{
+    position: relative;
+    top: -6vh;
+
+}
+
+.size{
+    width: 8vw;
+    height: 15vh; ;
+}
+
+.background-section{
+    background-color: #e4ffd2;
+    position: relative;
+    top: -6vh;
+    padding: 2vh;
+    height: 35vh;
+}
+
+.background-section-1{
+    background-color: #e4ffd2;
+    position: relative;
+    top: -6vh;
+    padding-bottom: 2vh;
+    height: 38vh;
+}
+
+#map { 
+    position: relative;
+    left: 2vw;
+    height: 57vh; 
+    width: 100%;
+}
+
