@@ -21,14 +21,12 @@ def scrape():
 
     scrape_target = requests.get(url)
     soup = BeautifulSoup(scrape_target.content, 'html.parser')
-    scrape_tag = soup.find_all(tag)
-    scrape_attrs = soup.find_all(attributes)
+    scrape_tag = soup.find_all(tag, attrs={"class": attributes})
     
     results = []
-    for i in range(len(scrape_tag)):
-        text = scrape_tag[i].text
-        attrs = scrape_attrs[i].text
-        results.append({"tag": text, "attributes": attrs})
+    for element in scrape_tag:
+        text = element.text
+        results.append({"data": text})
     
     return jsonify(results)
 
@@ -43,14 +41,12 @@ def scrape_csv():
 
     scrape_target = requests.get(url)
     soup = BeautifulSoup(scrape_target.content, 'html.parser')
-    scrape_tag = soup.find_all(tag, class_=attributes)
-    scrape_attrs = soup.find_all(tag, class_=attributes)
+    scrape_tag = soup.find_all(tag, attrs={"class": attributes})
     
     results = []
-    for i in range(len(scrape_tag)):
-        text = scrape_tag[i].text
-        attrs = scrape_attrs[i].text
-        results.append({"tag": text, "attributes": attrs})
+    for element in scrape_tag:
+        text = element.text
+        results.append({"data": text})
     
     df = pd.DataFrame(results)
     output = io.StringIO()
